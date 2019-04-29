@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_live_chat"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp">
+
+
+        <ImageView
+            android:id="@+id/item_level"
+            android:layout_width="30dp"
+            android:layout_height="15dp" />
+
+        <ImageView
+            android:id="@+id/item_custom_level"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/guard_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_chat_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_chat_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

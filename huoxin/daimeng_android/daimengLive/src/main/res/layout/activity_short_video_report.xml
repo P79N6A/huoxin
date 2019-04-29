@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorGray4"
+        android:layout_marginTop="20dp"
+        android:text="请选择你要举报的理由"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_circular_fill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

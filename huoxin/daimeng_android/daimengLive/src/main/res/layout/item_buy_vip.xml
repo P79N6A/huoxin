@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+                android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/white"
+    android:layout_marginTop="1dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/item_tv_time"
+            android:textColor="@color/global"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_tv_level"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/item_tv_car_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/item_iv_car"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/item_tv_price"
+        android:background="@drawable/btn_circular_not_fill"
+        android:textColor="@color/global"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="90dp"
+        android:layout_height="40dp"/>
+</RelativeLayout>

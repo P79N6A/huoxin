@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.daimeng.livee.ui.customviews.ActivityTitle
+        android:id="@+id/view_title"
+        android:background="@color/graywhite"
+        app:titleColor="@color/black"
+        app:titleText="管理"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="公会分成比例,请填写100以下10以上,例如10代表百分之10"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/et_ratio"
+        android:inputType="number"
+        android:textSize="@dimen/text_size_15"
+        android:padding="10dp"
+        android:hint="公会分成比例"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:background="@drawable/btn_circular_fill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_family_profit_record"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="查看家族收益记录"
+        android:background="@drawable/btn_circular_fill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</LinearLayout>

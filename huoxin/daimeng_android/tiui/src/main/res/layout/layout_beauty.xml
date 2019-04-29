@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018 拓幻科技 - tillusory.cn. All rights reserved.-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_panel_item"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/enableBeautyIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@drawable/ic_selector_enable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/whiteningTagTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/skin_whitening"
+        app:layout_constraintEnd_toStartOf="@+id/whiteningSB"
+        app:layout_constraintHorizontal_weight="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enableBeautyIV"
+        tools:ignore="RtlHardcoded" />
+
+    <SeekBar
+        android:id="@+id/whiteningSB"
+        style="@style/TiSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/whiteningTV"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/whiteningTagTV"
+        app:layout_constraintTop_toBottomOf="@+id/enableBeautyIV" />
+
+    <TextView
+        android:id="@+id/whiteningTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.08"
+        app:layout_constraintStart_toEndOf="@+id/whiteningSB"
+        app:layout_constraintTop_toBottomOf="@+id/enableBeautyIV"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/blemishRemovalTagTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/skin_blemish_removal"
+        app:layout_constraintEnd_toStartOf="@+id/blemishRemovalSB"
+        app:layout_constraintHorizontal_weight="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteningSB"
+        tools:ignore="RtlHardcoded" />
+
+    <SeekBar
+        android:id="@+id/blemishRemovalSB"
+        style="@style/TiSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/blemishRemovalTV"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/blemishRemovalTagTV"
+        app:layout_constraintTop_toBottomOf="@+id/whiteningSB" />
+
+    <TextView
+        android:id="@+id/blemishRemovalTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.08"
+        app:layout_constraintStart_toEndOf="@+id/blemishRemovalSB"
+        app:layout_constraintTop_toBottomOf="@+id/whiteningSB"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tendernessTagTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/skin_tenderness"
+        app:layout_constraintEnd_toStartOf="@+id/tendernessSB"
+        app:layout_constraintHorizontal_weight="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blemishRemovalSB"
+        tools:ignore="RtlHardcoded" />
+
+    <SeekBar
+        android:id="@+id/tendernessSB"
+        style="@style/TiSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/tendernessTV"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/tendernessTagTV"
+        app:layout_constraintTop_toBottomOf="@+id/blemishRemovalSB" />
+
+    <TextView
+        android:id="@+id/tendernessTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.08"
+        app:layout_constraintStart_toEndOf="@+id/tendernessSB"
+        app:layout_constraintTop_toBottomOf="@+id/blemishRemovalSB"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/saturationTagTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/skin_saturation"
+        app:layout_constraintEnd_toStartOf="@+id/saturationSB"
+        app:layout_constraintHorizontal_weight="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tendernessSB"
+        tools:ignore="RtlHardcoded" />
+
+    <SeekBar
+        android:id="@+id/saturationSB"
+        style="@style/TiSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/saturationTV"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/saturationTagTV"
+        app:layout_constraintTop_toBottomOf="@+id/tendernessSB" />
+
+    <TextView
+        android:id="@+id/saturationTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.08"
+        app:layout_constraintStart_toEndOf="@+id/saturationSB"
+        app:layout_constraintTop_toBottomOf="@+id/tendernessSB"
+        tools:ignore="RtlHardcoded" />
+
+</android.support.constraint.ConstraintLayout>

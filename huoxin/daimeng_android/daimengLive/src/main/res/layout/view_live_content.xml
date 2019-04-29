@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.daimeng.livee.widget.FrameAnimationView
+        android:id="@+id/frame_animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.daimeng.livee.widget.FrameAnimationView>
+
+    <LinearLayout
+        android:id="@+id/ll_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#66000000">
+
+        <com.anbetter.danmuku.DanMuParentView
+            android:id="@+id/dpv_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.anbetter.danmuku.DanMuView
+                android:id="@+id/giftDanView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </com.anbetter.danmuku.DanMuParentView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--顶部菜单-->
+        <RelativeLayout
+            android:id="@+id/ll_top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--主播头像观众人数-->
+            <RelativeLayout
+                android:id="@+id/rl_live_info"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_live_room_info"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.daimeng.livee.widget.AvatarView
+                    android:id="@+id/iv_live_emcee_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:border_color="@color/white"
+                    app:border_width="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_emcee_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/iv_live_emcee_head"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_live_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_10" />
+
+                    <TextView
+                        android:id="@+id/tv_live_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_8" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/iv_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/ll_emcee_info"
+                    android:background="@drawable/guanzhu"
+                    android:gravity="center"
+                    android:text="@string/attention"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/hl_room_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@+id/rl_live_info" />
+
+        </RelativeLayout>
+
+
+        <!--顶部菜单end-->
+
+        <!--魅力值label-->
+        <LinearLayout
+            android:id="@+id/ll_yp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ll_top_menu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_live_tick_num"
+            android:paddingRight="7dp">
+
+            <TextView
+                android:id="@+id/tv_live_tick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_income_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/room_yingpiao_check" />
+        </LinearLayout>
+        <!--魅力值labe end-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/ll_yp_label"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_content_order_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical">
+
+        <com.anbetter.danmuku.DanMuView
+            android:id="@+id/danmakuView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/tv_live_join_room_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_join_room_animation"
+            android:gravity="center_vertical"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/l_gift"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gift_srun"
+            android:visibility="gone">
+
+            <com.daimeng.livee.widget.MarqueeTextView
+                android:id="@+id/giftDani"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            <!--聊天list_view-->
+            <ListView
+                android:id="@+id/lv_live_room"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none">
+
+            </ListView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_live_game_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+    android:id="@+id/dong_hua"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"/>
+
+    <!--礼物动画显示start-->
+    <LinearLayout
+        android:id="@+id/ll_show_gift_animator"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" />
+    <!--礼物动画显示end-->
+
+    <!--点赞动画-->
+    <com.king.view.flutteringlayout.FlutteringLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        app:duration="3000"
+        app:enter_duration="300"
+        app:scale="1.0" />
+
+
+</RelativeLayout>

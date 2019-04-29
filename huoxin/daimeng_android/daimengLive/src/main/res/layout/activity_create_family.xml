@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/main_background">
+
+
+    <com.daimeng.livee.ui.customviews.ActivityTitle
+        android:id="@+id/view_title"
+        android:background="@color/graywhite"
+        app:titleColor="@color/black"
+        app:titleText="创建家族"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.daimeng.livee.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:background="@drawable/live_icon_add"
+        android:layout_marginTop="50dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="编辑家族头像"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="@dimen/text_size_13"
+        android:hint="请输入家族名称"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/et_notice"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="@dimen/text_size_13"
+        android:hint="请输入家族宣言"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="确认"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_circular_fill"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

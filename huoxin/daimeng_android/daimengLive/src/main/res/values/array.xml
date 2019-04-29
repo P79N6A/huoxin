@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="live_start_share_open">
+        <item>微博分享已开</item>
+        <item>微信分享已开</item>
+        <item>朋友圈分享已开</item>
+
+        <item>QQ分享已开</item>
+        <item>QQ空间分享已开</item>
+    </string-array>
+    <string-array name="live_start_share_close">
+        <item>微博分享已关</item>
+        <item>微信分享已关</item>
+        <item>朋友圈分享已关</item>
+
+        <item>QQ分享已关</item>
+        <item>QQ空间分享已关</item>
+    </string-array>
+
+
+
+    <declare-styleable name="CircleProgressBar">
+        <!--默认圆的颜色-->
+        <attr name="defaultColor" format="color" />
+        <!--进度条的颜色-->
+        <attr name="reachedColor" format="color" />
+        <!--默认圆的高度-->
+        <attr name="defaultHeight" format="dimension" />
+        <!--进度条的高度-->
+        <attr name="reachedHeight" format="dimension" />
+        <!--圆的半径-->
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+</resources>

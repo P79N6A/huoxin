@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--高德地图-->
+    <string name="amp_val">0f5ddb60a2b499889a04c12743a96c03</string>
+    <!--bugly-->
+    <string name="bugly_val">e0231048fa</string>
+    <!--极光推送-->
+    <string name="jpush_val">1dac5d346d1f3da220d5c78c</string>
+    <!--环信-->
+    <string name="huanxin">1146170311178297#daimenglive</string>
+
+    <integer name="pay_type">1</integer>
+
+    <string name="app_id">0a78b21aeb604d09a8ffd2ed14e8addb</string>
+</resources>

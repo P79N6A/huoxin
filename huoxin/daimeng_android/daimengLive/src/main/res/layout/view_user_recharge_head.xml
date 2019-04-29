@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="@dimen/text_size_12"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="请选择支付方式："
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="10dp"
+        style="@style/h_line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pay_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:background="@color/main_background"
+        android:layout_height="5dp"
+        style="@style/h_line"/>
+</LinearLayout>

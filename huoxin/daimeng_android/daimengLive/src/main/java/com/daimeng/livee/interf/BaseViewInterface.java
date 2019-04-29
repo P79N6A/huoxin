@@ -1,0 +1,14 @@
+package com.daimeng.livee.interf;
+
+/**
+ * 
+ * @author deyi
+ *
+ */
+public interface BaseViewInterface {
+	
+	public void initView();
+	
+	public void initData();
+	
+}

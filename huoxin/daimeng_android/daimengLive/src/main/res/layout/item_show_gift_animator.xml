@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rl_gift_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_gift_item">
+
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--用户头像-->
+                <com.daimeng.livee.widget.AvatarView
+                    app:border_width="1dp"
+                    app:border_color="@color/global"
+                    android:id="@+id/av_gift_uhead"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <!--礼物名称和用户昵称显示-->
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="@dimen/text_size_12"
+                        android:textColor="@color/white"
+                        android:id="@+id/tv_gift_uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="@dimen/text_size_12"
+                        android:textColor="@color/bright_yellow"
+                        android:id="@+id/tv_gift_gname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--礼物图片-->
+            <com.daimeng.livee.widget.AvatarView
+                android:id="@+id/av_gift_icon"
+                android:layout_marginLeft="-40dp"
+                android:src="@drawable/icon_def_phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ll_gift_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/rl_gift_content"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.daimeng.livee.widget.SGTextView
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:id="@+id/tv_show_gift_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

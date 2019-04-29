@@ -1,0 +1,162 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply plugin: 'bugly'
+
+bugly {
+    appId = ""
+    appKey = ""
+    debug = true
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    signingConfigs {
+        release {
+            keyAlias 'daimengvideo'
+            keyPassword 'daimengvideo'
+            storeFile file('../daimengvideo.jks')
+            storePassword 'daimengvideo'
+        }
+    }
+    defaultConfig {
+        applicationId "com.daimeng.livee"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 3
+        versionName "2.0"
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+        buildConfigField 'String', 'API_SERVER_URL_DEBUG', '"http://192.168.0.112"'
+        buildConfigField 'String', 'API_SERVER_URL', '"http://demozb.svcode.cn"'
+        //使用renderscript 兼容包
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+        flavorDimensions "versionCode"
+    }
+
+    productFlavors {
+
+        daimenglive {
+
+            applicationId "com.daimeng.live"
+            versionCode 1
+            versionName "2018072601"
+            buildConfigField 'String', 'API_SERVER_URL', '"http://live.qia11234.cn"'
+//            buildConfigField 'String', 'API_SERVER_URL', '"http://localhost"'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    useLibrary 'org.apache.http.legacy'
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //api 'com.android.support:support-v4:23.4.0'
+    api 'com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    api('io.socket:socket.io-client:0.7.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    api(name: 'LiteAVSDK_UGC_3.5.2170', ext: 'aar')
+    api files('libs/bottomView.jar')
+    api files('libs/libammsdk.jar')
+    api files('libs/AMap_Location_V2.4.0_20160308.jar')
+    api files('libs/MobTools-2016.0830.1940.jar')
+    api files('libs/ShareSDK-QZone-2.7.7.jar')
+    api files('libs/MobCommons-2016.0830.1940.jar')
+    api files('libs/ShareSDK-QQ-2.7.7.jar')
+    api files('libs/ShareSDK-Core-2.7.7.jar')
+    api files('libs/ShareSDK-Wechat-Favorite-2.7.7.jar')
+    api files('libs/ShareSDK-SinaWeibo-2.7.7.jar')
+    api files('libs/ShareSDK-Wechat-Core-2.7.7.jar')
+    api files('libs/ShareSDK-Wechat-2.7.7.jar')
+    api files('libs/ShareSDK-Wechat-Moments-2.7.7.jar')
+    api files('libs/jpush-android-2.1.9.jar')
+    api project(path: ':live')
+    api project(path: ':imagepickerModule')
+    api files('libs/nineoldandroids-2.4.0.jar')
+    api files('libs/cos-sdk-android.1.4.3.11.jar')
+    api files('libs/sha1utils.jar')
+    api files('libs/agora-rtc-sdk.jar')
+    api files('libs/videoprp.jar')
+    api files('libs/alipaySingle-20170510.jar')
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.jakewharton:butterknife:8.5.1'
+    api 'com.zhy:okhttputils:2.6.2'
+    api 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'com.android.support:recyclerview-v7:23.0.1'
+    api 'io.reactivex:rxandroid:1.2.1'
+    api 'io.reactivex:rxjava:1.1.6'
+    api 'com.tencent.bugly:crashreport:2.2.2'
+    api 'uk.co.chrisjenx:calligraphy:2.2.0'
+    api 'com.bigkoo:alertview:1.0.3'
+    api 'com.ksyun.media:libksylive-java:3.0.2'
+    api 'com.ksyun.media:libksylive-armv7a:3.0.2'
+    api 'com.ksyun.media:libksylive-arm64:3.0.2'
+    api 'com.ksyun.media:libksylive-x86:3.0.2'
+    api 'org.greenrobot:eventbus:3.0.0'
+    api 'com.hyphenate:hyphenate-sdk-lite:3.3.0'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.12'
+    api 'com.alibaba:fastjson:1.1.60.android'
+    api 'com.youth.banner:banner:1.4.10'
+    api 'org.greenrobot:greendao:3.2.2'
+    //api 'com.android.support.constraint:constraint-layout:1.0.2'
+    api 'com.android.support:multidex:1.0.1'
+    api 'com.luffykou:android-common-utils:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    api 'com.king.view:flutteringlayout:1.1.0'
+    api 'com.anbetter:danmukulight:1.0.1'
+    api 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    api 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    //api 'com.android.support:design:24.2.0'
+    api 'com.gcssloop.widget:rclayout:1.6.0'
+    api 'com.github.pinguo-zhouwei:EasyBlur:v1.0.0'
+    api 'com.bigkoo:alertview:1.0.3'
+    api 'com.android.support:cardview-v7:25.2.0'
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    api 'com.github.yyued:SVGAPlayer-Android:2.1.8'
+    //api(name: 'ti-sdk', ext: 'aar')
+    //implementation files('libs/ti-sdk.aar')
+    api project(path: ':tiui')
+    implementation 'com.github.arcadefire:nice-spinner:1.3.4'
+    implementation files('libs/tbs.jar')
+
+    api 'com.zzhoujay.richtext:richtext:3.0.7'
+    api 'com.zzhoujay:html:1.0.2'
+
+
+}

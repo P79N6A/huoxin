@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_hot_search"
+            android:src="@drawable/icon_home_search"
+             />
+
+        <FrameLayout
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/fl_tab_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_hot_select_region"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="center"
+                android:src="@drawable/home_icn_drop_down"
+                android:visibility="gone" />
+
+            <com.daimeng.livee.widget.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:pstsShouldExpand="true" />
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_hot_private_chat"
+                android:src="@drawable/private_letter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_hot_new_message"
+                android:background="@drawable/icon_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:background="@color/colorGray2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginBottom="50dp"
+        android:id="@+id/mviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

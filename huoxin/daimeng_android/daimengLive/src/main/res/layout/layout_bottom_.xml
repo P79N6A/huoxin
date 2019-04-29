@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:background="@drawable/yanjun"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="68.6dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/bottom_vip_numtwo"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+            <TextView
+                android:id="@+id/vip_tv_two"
+                android:textSize="9dp"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#800080"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:background="@drawable/vip_num_one3"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:id="@+id/bottom_vip_numone"
+                android:layout_width="79dp"
+                android:layout_height="79dp" />
+            <TextView
+                android:id="@+id/vip_tv_one"
+                android:textSize="9dp"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#800080"
+                android:layout_marginBottom="11dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bottom_vip_numthree"
+                android:layout_width="65dp"
+                android:layout_height="63dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="68.6dp"
+                android:background="@drawable/jijun" />
+            <TextView
+                android:id="@+id/vip_tv_three"
+                android:textSize="9dp"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="233dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="81dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_iv2"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:layout_marginBottom="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/bottom_iv1"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="81dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_iv3"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/guibinxiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/bottom_bottom_iv1"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+             />
+        <ImageView
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/bottom_bottom_iv2"
+            android:layout_width="37dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/bottom_bottom_iv3"
+            android:layout_width="37dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:layout_marginLeft="195dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/bottom_bottom_iv4"
+            android:layout_width="37dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/bottom_bottom_iv5"
+            android:layout_width="37dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:layout_marginLeft="296dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/bottom_bottom_iv6"
+            android:layout_width="37dp"
+            android:layout_height="37dp" />
+
+    </RelativeLayout>
+</LinearLayout>
