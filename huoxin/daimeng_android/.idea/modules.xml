@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/daimengLive/daimengLive.iml" filepath="$PROJECT_DIR$/daimengLive/daimengLive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daimeng_android.iml" filepath="$PROJECT_DIR$/daimeng_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagepickerModule/imagepickerModule.iml" filepath="$PROJECT_DIR$/imagepickerModule/imagepickerModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/live/live.iml" filepath="$PROJECT_DIR$/live/live.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tiui/tiui.iml" filepath="$PROJECT_DIR$/tiui/tiui.iml" />
+    </modules>
+  </component>
+</project>

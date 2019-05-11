@@ -59,7 +59,7 @@ public class SearchMusicAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         final ViewHolder viewHolder;
         viewHolder = new ViewHolder();
         convertView = View.inflate(AppContext.getInstance(), R.layout.item_search_music,null);
@@ -92,21 +92,28 @@ public class SearchMusicAdapter extends BaseAdapter {
                 CircleProgressBar.Status status = viewHolder.cpProgress.getStatus();
                 switch (status) {
                     case Waiting:
-                        viewHolder.cpProgress.setStatus(CircleProgressBar.Status.Loading);
-                        viewHolder.timer = new Timer();
-                        viewHolder.task = new TimerTask() {
+                        mFragment.downloadMusic(mMusicList.get(position),viewHolder.cpProgress);
+                        mFragment.getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                final int progress = viewHolder.cpProgress.getProgress();
-                                if (progress >= 100) {
-                                    viewHolder.timer.cancel();
-                                    viewHolder.cpProgress.setStatus(CircleProgressBar.Status.Finish);
-                                } else {
-                                    viewHolder.cpProgress.setProgress(progress);
-                                }
+                                viewHolder.cpProgress.setStatus(CircleProgressBar.Status.Loading);
+                                viewHolder.timer = new Timer();
+                                viewHolder.task = new TimerTask() {
+                                    @Override
+                                    public void run(){
+                                        final int progress = viewHolder.cpProgress.getProgress();
+                                        if (progress >= 100) {
+                                            viewHolder.timer.cancel();
+                                            viewHolder.cpProgress.setStatus(CircleProgressBar.Status.Finish);
+                                        } else {
+                                            viewHolder.cpProgress.setProgress(progress);
+                                        }
+                                    }
+                                };
+
+                                viewHolder.timer.schedule(viewHolder.task, 0, 100);
                             }
-                        };
-                        viewHolder.timer.schedule(viewHolder.task, 0, 100);
+                        });
                         break;
                     case Loading:
                         viewHolder.timer.cancel();

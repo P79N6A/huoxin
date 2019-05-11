@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zzhoujay:html-1.0.2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/html-1.0.2.aar/acedaf1a411e1eaff2c82befcecdf346/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/html-1.0.2.aar/acedaf1a411e1eaff2c82befcecdf346/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/modules-2/files-2.1/com.zzhoujay/html/1.0.2/7638d98178cd364b7f1665c901f28a8e4c81935d/html-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

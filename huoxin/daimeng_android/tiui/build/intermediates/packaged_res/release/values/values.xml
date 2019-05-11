@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_panel_item">#44000000</color>
+    <color name="bg_panel_type">#80000000</color>
+    <color name="blue">#1296db</color>
+    <style name="TiSeekBar">
+        <item name="android:max">100</item>
+        <item name="android:maxHeight">5dp</item>
+        <item name="android:minHeight">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:progress">0</item>
+        <item name="android:thumb">@drawable/ic_seek_bar_thumb</item>
+        <item name="android:progressDrawable">@drawable/bg_seek_bar</item>
+    </style>
+    <style name="TiTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

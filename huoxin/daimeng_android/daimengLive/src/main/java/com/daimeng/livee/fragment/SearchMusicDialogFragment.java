@@ -13,8 +13,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.dd.CircularProgressButton;
-import com.google.gson.Gson;
+import com.bese.CircleProgressBar;
 import com.daimeng.livee.AppConfig;
 import com.daimeng.livee.AppContext;
 import com.daimeng.livee.R;
@@ -26,6 +25,7 @@ import com.daimeng.livee.utils.DBManager;
 import com.daimeng.livee.utils.TLog;
 import com.daimeng.livee.widget.BlackEditText;
 import com.daimeng.livee.widget.BlackTextView;
+import com.google.gson.Gson;
 import com.zhy.http.okhttp.callback.FileCallBack;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -36,8 +36,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.ButterKnife;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import okhttp3.Call;
 
 /**
@@ -171,7 +171,7 @@ public class SearchMusicDialogFragment extends DialogFragment {
     /**
      * @dw 获取歌曲信息
      * */
-    public void downloadMusic(final MusicBean music,final CircularProgressButton mBtnDownload) {
+    public void downloadMusic(final MusicBean music,final CircleProgressBar mBtnDownload) {
 
         //获取歌曲信息
         PhoneLiveApi.getMusicFileUrl(music.audio_id,new StringCallback(){
@@ -211,14 +211,13 @@ public class SearchMusicDialogFragment extends DialogFragment {
     }
 
     //下载歌词和歌曲
-    private void downloadMusicAndLrc(String musicUrl, String musicLrc, final MusicBean music, final CircularProgressButton mBtnDownload) {
+    private void downloadMusicAndLrc(String musicUrl, String musicLrc, final MusicBean music, final CircleProgressBar mBtnDownload) {
         //下载歌曲
         PhoneLiveApi.downloadMusic(musicUrl,new FileCallBack(AppConfig.DEFAULT_SAVE_MUSIC_PATH,music.audio_name + ".mp3"){
 
             @Override
             public void onError(Call call, Exception e,int id) {
-
-                mBtnDownload.setErrorText("下载失败");
+                Toast.makeText(getActivity(), "下载失败", Toast.LENGTH_SHORT).show();
             }
 
             @Override

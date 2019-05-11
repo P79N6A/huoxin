@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.anbetter:danmukulight-1.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/danmukulight-1.0.1.aar/d7835542fe00df188aedcf4397f9c040/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/danmukulight-1.0.1.aar/d7835542fe00df188aedcf4397f9c040/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/modules-2/files-2.1/com.anbetter/danmukulight/1.0.1/6d0cbfaa5e704072476db5324d9fd1db42c3261e/danmukulight-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

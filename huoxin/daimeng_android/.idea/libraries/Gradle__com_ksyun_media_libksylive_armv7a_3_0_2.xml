@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ksyun.media:libksylive-armv7a-3.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/libksylive-armv7a-3.0.2.aar/f13fc91625497d10fdc6738fee98bc6d/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/libksylive-armv7a-3.0.2.aar/f13fc91625497d10fdc6738fee98bc6d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

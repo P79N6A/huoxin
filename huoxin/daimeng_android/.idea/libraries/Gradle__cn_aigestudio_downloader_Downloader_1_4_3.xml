@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.aigestudio.downloader:Downloader-1.4.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/Downloader-1.4.3.aar/4ad0459e72695eb62ba1d9bba10b05e2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/Downloader-1.4.3.aar/4ad0459e72695eb62ba1d9bba10b05e2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/modules-2/files-2.1/cn.aigestudio.downloader/Downloader/1.4.3/2f2831201674ee9e96f2f066ff1c8ef1b969ec5e/Downloader-1.4.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018 拓幻科技 - tillusory.cn. All rights reserved.-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_panel_item"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/enableFaceTrimIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@drawable/ic_selector_enable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/eyeMagnifyingTagTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/eye_magnifying"
+        app:layout_constraintEnd_toStartOf="@+id/eyeMagnifyingSB"
+        app:layout_constraintHorizontal_weight="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enableFaceTrimIV"
+        tools:ignore="RtlHardcoded" />
+
+    <SeekBar
+        android:id="@+id/eyeMagnifyingSB"
+        style="@style/TiSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/eyeMagnifyingTV"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/eyeMagnifyingTagTV"
+        app:layout_constraintTop_toBottomOf="@+id/enableFaceTrimIV" />
+
+    <TextView
+        android:id="@+id/eyeMagnifyingTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.08"
+        app:layout_constraintStart_toEndOf="@+id/eyeMagnifyingSB"
+        app:layout_constraintTop_toBottomOf="@+id/enableFaceTrimIV"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/chinSlimmingTagTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/chin_slimming"
+        app:layout_constraintEnd_toStartOf="@+id/chinSlimmingSB"
+        app:layout_constraintHorizontal_weight="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eyeMagnifyingSB"
+        tools:ignore="RtlHardcoded" />
+
+    <SeekBar
+        android:id="@+id/chinSlimmingSB"
+        style="@style/TiSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/chinSlimmingTV"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/chinSlimmingTagTV"
+        app:layout_constraintTop_toBottomOf="@+id/eyeMagnifyingSB" />
+
+    <TextView
+        android:id="@+id/chinSlimmingTV"
+        style="@style/TiTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.08"
+        app:layout_constraintStart_toEndOf="@+id/chinSlimmingSB"
+        app:layout_constraintTop_toBottomOf="@+id/eyeMagnifyingSB"
+        tools:ignore="RtlHardcoded" />
+
+</android.support.constraint.ConstraintLayout>

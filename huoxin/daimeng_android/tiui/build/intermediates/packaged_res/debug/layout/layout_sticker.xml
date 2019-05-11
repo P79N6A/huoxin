@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (c) 2018 拓幻科技 - tillusory.cn. All rights reserved.-->
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stickerRV"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/bg_panel_item"
+    android:padding="15dp">
+
+</android.support.v7.widget.RecyclerView>

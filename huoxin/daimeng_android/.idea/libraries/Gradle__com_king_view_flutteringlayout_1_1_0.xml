@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.king.view:flutteringlayout-1.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/flutteringlayout-1.1.0.aar/4f94ea51c036ff8a2ed1079e1b2bf425/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/transforms-1/files-1.1/flutteringlayout-1.1.0.aar/4f94ea51c036ff8a2ed1079e1b2bf425/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-3.2/caches/modules-2/files-2.1/com.king.view/flutteringlayout/1.1.0/53171c7e0fd040f72e49ac271761679a8aab4666/flutteringlayout-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
