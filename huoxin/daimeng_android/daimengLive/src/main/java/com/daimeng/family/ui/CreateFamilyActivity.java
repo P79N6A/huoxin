@@ -8,14 +8,14 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
-import com.daimeng.livee.api.remote.ApiUtils;
-import com.daimeng.livee.api.remote.PhoneLiveApi;
-import com.daimeng.livee.base.SelectPicActivity;
-import com.daimeng.livee.ui.customviews.ActivityTitle;
-import com.daimeng.livee.utils.SimpleUtils;
-import com.daimeng.livee.widget.CircleImageView;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
+import com.daimeng.live.api.remote.ApiUtils;
+import com.daimeng.live.api.remote.PhoneLiveApi;
+import com.daimeng.live.base.SelectPicActivity;
+import com.daimeng.live.ui.customviews.ActivityTitle;
+import com.daimeng.live.utils.SimpleUtils;
+import com.daimeng.live.widget.CircleImageView;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import org.json.JSONArray;

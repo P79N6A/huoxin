@@ -5,7 +5,7 @@
     android:padding="10dp"
     android:layout_marginTop="1dp"
     >
-    <com.daimeng.livee.widget.BlackTextView
+    <com.daimeng.live.widget.BlackTextView
         android:textColor="@color/black"
         android:textStyle="bold"
         android:id="@+id/tv_order_item_u_no"
@@ -13,7 +13,7 @@
         android:text="NO.7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <com.daimeng.livee.widget.CircleImageView
+    <com.daimeng.live.widget.CircleImageView
         android:id="@+id/ci_order_item_u_head"
         android:layout_margin="7dp"
         android:layout_width="40dp"

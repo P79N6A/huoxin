@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCUtils;
 import com.tencent.liteav.demo.shortvideo.choose.TCVideoFileInfo;
 import com.tencent.liteav.demo.shortvideo.joiner.widget.swipemenu.SwipeMenuAdapter;

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.daimeng.livee.ui.customviews.ActivityTitle
+    <com.daimeng.live.ui.customviews.ActivityTitle
         android:id="@+id/view_title"
         android:background="@color/graywhite"
         app:titleColor="@color/black"
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
 
-    <com.daimeng.livee.widget.PagerSlidingTabStrip
+    <com.daimeng.live.widget.PagerSlidingTabStrip
         android:background="@color/white"
         android:id="@+id/my_pageSlidingTagStrip"
         android:layout_width="match_parent"

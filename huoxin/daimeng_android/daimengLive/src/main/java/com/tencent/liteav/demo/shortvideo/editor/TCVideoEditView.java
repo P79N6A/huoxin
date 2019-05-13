@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCUtils;
 import com.tencent.rtmp.TXLog;
 import com.tencent.ugc.TXVideoEditConstants;

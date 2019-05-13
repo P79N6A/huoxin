@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/rl_live_root">
 
-    <com.daimeng.livee.widget.VideoSurfaceView
+    <com.daimeng.live.widget.VideoSurfaceView
         android:id="@+id/video_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +16,7 @@
         android:id="@+id/view_live_content">
 
         <!--加载背景图-->
-        <com.daimeng.livee.widget.LoadUrlImageView
+        <com.daimeng.live.widget.LoadUrlImageView
             android:scaleType="centerCrop"
             android:id="@+id/iv_live_look_loading_bg"
             android:layout_width="match_parent"
@@ -113,7 +113,7 @@
             android:layout_height="30dp"
             android:orientation="horizontal">
 
-            <com.daimeng.livee.widget.BlackButton
+            <com.daimeng.live.widget.BlackButton
                 android:visibility="gone"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
@@ -130,7 +130,7 @@
             android:layout_marginBottom="30dp"
             android:layout_width="250dp"
             android:layout_height="50dp">
-            <com.daimeng.livee.widget.BlackEditText
+            <com.daimeng.live.widget.BlackEditText
                 android:layout_marginRight="60dp"
                 android:textColor="@color/white"
                 android:padding="5dp"
@@ -157,7 +157,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginBottom="10dp">
 
-        <com.daimeng.livee.ui.customviews.HeartLayout
+        <com.daimeng.live.ui.customviews.HeartLayout
             android:id="@+id/heart_layout"
             android:layout_width="100dp"
             android:layout_height="wrap_content"

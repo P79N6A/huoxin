@@ -8,14 +8,14 @@
     android:orientation="vertical"
     android:background="@color/main_background">
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         android:id="@+id/ll_share"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         app:name="点击复制推广链接"
         app:isBottom="true"/>
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         app:canNav="true"
         android:id="@+id/ll_user_list"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         app:isBottom="true"/>
 
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         app:canNav="true"
         android:id="@+id/ll_agent_record"
         android:layout_width="match_parent"

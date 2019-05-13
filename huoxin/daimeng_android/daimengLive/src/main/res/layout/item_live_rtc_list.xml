@@ -4,7 +4,7 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
 
-    <com.daimeng.livee.widget.CircleImageView
+    <com.daimeng.live.widget.CircleImageView
         android:id="@+id/item_iv_avatar"
         android:layout_centerVertical="true"
         android:layout_width="40dp"

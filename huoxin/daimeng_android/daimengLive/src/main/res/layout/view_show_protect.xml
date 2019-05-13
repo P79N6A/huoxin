@@ -49,14 +49,14 @@
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/diamone" />
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="乐币: "
                     android:textColor="@color/global"
                     android:textSize="@dimen/text_size_15" />
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:id="@+id/tv_show_select_user_coin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

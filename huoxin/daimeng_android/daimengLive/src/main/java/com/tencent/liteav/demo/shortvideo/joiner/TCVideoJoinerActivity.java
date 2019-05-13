@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCConstants;
 import com.tencent.liteav.demo.shortvideo.choose.TCVideoFileInfo;
 import com.tencent.liteav.demo.shortvideo.joiner.widget.swipemenu.Closeable;

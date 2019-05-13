@@ -19,8 +19,12 @@ android {
             storePassword 'daimengvideo'
         }
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
     defaultConfig {
-        applicationId "com.daimeng.livee"
+        applicationId "com.daimeng.live"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 3

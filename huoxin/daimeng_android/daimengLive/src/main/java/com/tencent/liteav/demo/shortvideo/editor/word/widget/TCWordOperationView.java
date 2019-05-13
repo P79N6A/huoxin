@@ -23,7 +23,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 import java.util.Arrays;
 import java.util.Collections;

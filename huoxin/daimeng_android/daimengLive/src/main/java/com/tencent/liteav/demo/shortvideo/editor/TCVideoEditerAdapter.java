@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCConstants;
 
 import java.util.ArrayList;

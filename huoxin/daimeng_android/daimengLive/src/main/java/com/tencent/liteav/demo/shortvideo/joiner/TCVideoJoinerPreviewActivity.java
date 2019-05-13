@@ -24,7 +24,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.basic.log.TXCLog;
 import com.tencent.liteav.demo.common.activity.videopreview.TCVideoPreviewActivity;
 import com.tencent.liteav.demo.common.utils.TCConstants;

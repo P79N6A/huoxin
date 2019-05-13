@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCUtils;
 
 import java.io.File;

@@ -27,14 +27,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textSize="@dimen/text_size_15"
                     android:textColor="@color/colorGray5"
                     android:id="@+id/tv_diamondsnum"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textSize="@dimen/text_size_10"
                     android:id="@+id/tv_diamonds_zeng"
                     android:textColor="@color/colorGray4"
@@ -44,7 +44,7 @@
             </LinearLayout>
 
 
-            <com.daimeng.livee.widget.BlackTextView
+            <com.daimeng.live.widget.BlackTextView
                 android:gravity="center"
                 android:padding="10dp"
                 android:background="@drawable/btn_circular_not_fill"

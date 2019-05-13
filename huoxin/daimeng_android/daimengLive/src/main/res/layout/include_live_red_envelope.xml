@@ -25,7 +25,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <com.daimeng.livee.widget.CircleImageView
+                <com.daimeng.live.widget.CircleImageView
                     android:id="@+id/iv_envelope_head"
                     android:layout_width="70dp"
                     android:layout_height="70dp"

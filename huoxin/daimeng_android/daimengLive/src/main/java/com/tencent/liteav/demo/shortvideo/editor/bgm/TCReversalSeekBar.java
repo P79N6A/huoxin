@@ -15,7 +15,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 /**
  * Created by hanszhli on 2017/6/16.

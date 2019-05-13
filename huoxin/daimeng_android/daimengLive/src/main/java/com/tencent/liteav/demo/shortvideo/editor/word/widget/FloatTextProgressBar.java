@@ -7,7 +7,7 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 public class FloatTextProgressBar extends CustomProgressBar {
 

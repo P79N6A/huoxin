@@ -27,7 +27,7 @@
             android:text="@string/balance" />
 
 
-        <com.daimeng.livee.widget.BlackTextView
+        <com.daimeng.live.widget.BlackTextView
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:textColor="@color/white"

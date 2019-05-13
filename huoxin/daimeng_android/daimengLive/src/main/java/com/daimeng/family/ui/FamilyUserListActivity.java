@@ -6,14 +6,14 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.daimeng.family.adapter.FamilyUserListAdapter;
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
-import com.daimeng.livee.api.remote.ApiUtils;
-import com.daimeng.livee.api.remote.PhoneLiveApi;
-import com.daimeng.livee.base.BaseActivity;
-import com.daimeng.livee.bean.SimpleUserInfo;
-import com.daimeng.livee.ui.customviews.ActivityTitle;
-import com.daimeng.livee.utils.UIHelper;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
+import com.daimeng.live.api.remote.ApiUtils;
+import com.daimeng.live.api.remote.PhoneLiveApi;
+import com.daimeng.live.base.BaseActivity;
+import com.daimeng.live.bean.SimpleUserInfo;
+import com.daimeng.live.ui.customviews.ActivityTitle;
+import com.daimeng.live.utils.UIHelper;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import org.json.JSONArray;

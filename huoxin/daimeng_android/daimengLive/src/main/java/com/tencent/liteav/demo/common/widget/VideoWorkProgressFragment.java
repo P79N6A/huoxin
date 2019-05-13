@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 /**
  * Created by hanszhli on 2017/6/5.

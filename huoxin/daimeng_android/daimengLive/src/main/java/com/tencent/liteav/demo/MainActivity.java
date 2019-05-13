@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.widget.ModuleEntryItemView;
 import com.tencent.liteav.demo.shortvideo.choose.TCVideoChooseActivity;
 import com.tencent.liteav.demo.videorecord.TCVideoSettingActivity;

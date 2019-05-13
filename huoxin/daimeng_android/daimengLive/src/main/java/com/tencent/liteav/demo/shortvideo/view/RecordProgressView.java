@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 import java.util.ArrayList;
 

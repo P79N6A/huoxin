@@ -4,13 +4,13 @@
     android:orientation="vertical"
     android:layout_width="30dp"
     android:layout_height="30dp">
-    <com.daimeng.livee.widget.AvatarView
+    <com.daimeng.live.widget.AvatarView
         android:id="@+id/av_userHead"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:border_color="@color/white"
         app:border_width="1dp"/>
-    <com.daimeng.livee.widget.AvatarView
+    <com.daimeng.live.widget.AvatarView
         android:visibility="gone"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"

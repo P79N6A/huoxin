@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 import java.util.List;
 

@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:weightSum="2">
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:id="@+id/tv_home_page_index_btn"
                     android:textColor="@color/global"
                     android:gravity="center"
@@ -44,7 +44,7 @@
                     android:layout_gravity="center"
                     android:layout_height="20dp"
                     style="@style/v_line"/>
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textColor="@color/black"
                     android:id="@+id/tv_home_page_video_btn"
                     android:gravity="center"

@@ -3,7 +3,7 @@ package com.daimeng.agora;
 import android.content.Context;
 import android.util.Log;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 import java.util.ArrayList;
 import java.util.List;

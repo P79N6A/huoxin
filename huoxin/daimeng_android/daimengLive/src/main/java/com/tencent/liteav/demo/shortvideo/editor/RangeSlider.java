@@ -14,7 +14,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 public class RangeSlider extends ViewGroup {
     private static final String TAG = "RangeSlider";

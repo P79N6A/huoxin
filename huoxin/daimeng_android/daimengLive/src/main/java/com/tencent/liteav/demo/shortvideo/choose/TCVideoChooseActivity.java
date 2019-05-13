@@ -22,9 +22,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.daimeng.livee.ui.customviews.ActivityTitle;
+import com.daimeng.live.ui.customviews.ActivityTitle;
 import com.tencent.liteav.basic.log.TXCLog;
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCConstants;
 import com.tencent.liteav.demo.shortvideo.editor.TCVideoEditerActivity;
 import com.tencent.liteav.demo.shortvideo.joiner.TCVideoJoinerActivity;

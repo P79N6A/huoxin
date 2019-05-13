@@ -19,7 +19,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 /**
  * Created by hanszhli on 2017/6/27.

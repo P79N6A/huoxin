@@ -6,7 +6,7 @@
               xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/main_background">
 
-    <com.daimeng.livee.ui.customviews.ActivityTitle
+    <com.daimeng.live.ui.customviews.ActivityTitle
         android:id="@+id/view_title"
         app:titleText="@string/my_profit"
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="20dp" />
 
-        <com.daimeng.livee.widget.BlackTextView
+        <com.daimeng.live.widget.BlackTextView
             android:id="@+id/tv_votes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/can_cash_money"
@@ -83,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
 
-            <com.daimeng.livee.widget.BlackTextView
+            <com.daimeng.live.widget.BlackTextView
                 android:textStyle="bold"
                 android:id="@+id/tv_profit_canwithdraw"
                 android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/day_can_cash_money"
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
 
-            <com.daimeng.livee.widget.BlackTextView
+            <com.daimeng.live.widget.BlackTextView
                 android:id="@+id/tv_profit_withdraw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

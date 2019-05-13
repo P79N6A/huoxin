@@ -24,8 +24,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.daimeng.livee.R;
-import com.daimeng.livee.utils.TLog;
+import com.daimeng.live.R;
+import com.daimeng.live.utils.TLog;
 import com.tencent.liteav.demo.common.utils.TCConstants;
 import com.tencent.liteav.demo.videoupload.TXUGCPublish;
 import com.tencent.liteav.demo.videoupload.TXUGCPublishTypeDef;

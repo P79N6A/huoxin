@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal">
 
-    <com.daimeng.livee.ui.customviews.ActivityTitle
+    <com.daimeng.live.ui.customviews.ActivityTitle
         android:id="@+id/view_title"
         android:background="@color/white"
         app:titleColor="@color/black"
@@ -28,7 +28,7 @@
             android:layout_height="40dp"
             android:orientation="horizontal">
 
-            <com.daimeng.livee.widget.BlackEditText
+            <com.daimeng.live.widget.BlackEditText
                 android:inputType="number"
                 android:id="@+id/et_loginphone"
                 style="@style/edit_input_not_fill"
@@ -46,7 +46,7 @@
             android:layout_height="40dp"
             android:orientation="horizontal">
 
-            <com.daimeng.livee.widget.BlackEditText
+            <com.daimeng.live.widget.BlackEditText
                 android:id="@+id/et_password"
                 style="@style/edit_input_not_fill"
                 android:hint="@string/plase_fill_in_pass"
@@ -61,7 +61,7 @@
     </LinearLayout>
 
 
-    <com.daimeng.livee.widget.BlackButton
+    <com.daimeng.live.widget.BlackButton
         style="?android:attr/borderlessButtonStyle"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/ll_content"

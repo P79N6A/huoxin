@@ -19,7 +19,7 @@
                 android:id="@+id/ll_home_page_menu_follow"
                 style="@style/home_page_user_info_bottom_menu">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textSize="@dimen/text_size_15"
                     android:id="@+id/tv_home_page_menu_follow"
                     android:layout_marginLeft="5dp"
@@ -37,7 +37,7 @@
                 android:id="@+id/ll_home_page_menu_privatechat"
                 style="@style/home_page_user_info_bottom_menu">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textColor="@color/global"
                     android:textSize="@dimen/text_size_15"
                     android:layout_marginLeft="5dp"
@@ -54,7 +54,7 @@
                 android:id="@+id/ll_home_page_menu_lahei"
                 style="@style/home_page_user_info_bottom_menu">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textColor="@color/global"
                     android:id="@+id/tv_home_page_black_state"
                     android:textSize="@dimen/text_size_15"

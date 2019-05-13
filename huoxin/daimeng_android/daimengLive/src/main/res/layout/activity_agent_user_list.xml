@@ -5,6 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.daimeng.livee.ui.AgentUserListActivity">
+    tools:context="com.daimeng.live.ui.AgentUserListActivity">
 
 </android.support.constraint.ConstraintLayout>

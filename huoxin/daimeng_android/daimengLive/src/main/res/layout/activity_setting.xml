@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/main_background">
 
-    <com.daimeng.livee.ui.customviews.ActivityTitle
+    <com.daimeng.live.ui.customviews.ActivityTitle
         android:id="@+id/view_title"
         android:background="@color/graywhite"
         app:titleColor="@color/black"
@@ -14,7 +14,7 @@
         android:layout_height="50dp"/>
 
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         android:id="@+id/rl_change_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         android:id="@+id/ll_push_manage"
         style="@style/option_item_rl" >
 
-        <com.daimeng.livee.widget.BlackTextView
+        <com.daimeng.live.widget.BlackTextView
             style="@style/option_item_text"
             android:text="@string/pushmanage" />
         <ImageView
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content" />
     </RelativeLayout>
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         android:id="@+id/ll_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         app:isBottom="true"
         app:canNav="true"/>
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         android:id="@+id/ll_feedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
         app:isBottom="true"
         app:canNav="true"/>
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         android:id="@+id/ll_clearCache"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
         app:canNav="true"/>
 
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         android:id="@+id/ll_blank_list"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -79,7 +79,7 @@
         android:id="@+id/ll_room_setting"
         style="@style/option_item_rl" >
 
-        <com.daimeng.livee.widget.BlackTextView
+        <com.daimeng.live.widget.BlackTextView
             style="@style/option_item_text"
             android:text="直播设置" />
 
@@ -91,7 +91,7 @@
     </RelativeLayout>
 
 
-    <com.daimeng.livee.ui.customviews.LineControllerView
+    <com.daimeng.live.ui.customviews.LineControllerView
         android:id="@+id/ll_check_update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
         android:background="@color/white"
         android:id="@+id/ll_login_out"
         style="@style/option_item_rl" >
-        <com.daimeng.livee.widget.BlackTextView
+        <com.daimeng.live.widget.BlackTextView
             android:text="@string/loginout"
             style="@style/option_item_text"
             android:layout_width="fill_parent"

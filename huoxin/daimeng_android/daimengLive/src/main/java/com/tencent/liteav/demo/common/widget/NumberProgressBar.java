@@ -11,7 +11,7 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 public class NumberProgressBar extends View {
 

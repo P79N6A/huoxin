@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 
 public class ModuleEntryItemView extends FrameLayout {

@@ -131,14 +131,14 @@
             android:paddingRight="10dp"
             android:visibility="gone">
 
-            <com.daimeng.livee.widget.BlackButton
+            <com.daimeng.live.widget.BlackButton
                 android:id="@+id/tglbtn_danmu_setting"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:background="@drawable/tglbtn_live_danmu_setting" />
 
-            <com.daimeng.livee.widget.BlackEditText
+            <com.daimeng.live.widget.BlackEditText
                 android:id="@+id/et_live_chat_input"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

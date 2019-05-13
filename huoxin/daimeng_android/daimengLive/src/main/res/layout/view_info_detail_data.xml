@@ -19,7 +19,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <com.daimeng.livee.widget.AvatarView
+            <com.daimeng.live.widget.AvatarView
                 android:id="@+id/iv_avatar"
                 android:layout_width="70dp"
                 android:layout_height="70dp"

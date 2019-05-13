@@ -30,7 +30,7 @@
             android:layout_height="30dp" />
 
     </LinearLayout>
-    <com.daimeng.livee.widget.music.LrcView
+    <com.daimeng.live.widget.music.LrcView
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:layout_centerInParent="true"

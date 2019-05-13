@@ -13,13 +13,13 @@
         android:gravity="center"
         android:orientation="vertical">
         <!--礼物图片-->
-        <com.daimeng.livee.widget.LoadUrlImageView
+        <com.daimeng.live.widget.LoadUrlImageView
             android:id="@+id/iv_show_protect_img"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/drawable_face_beauty" />
 
-        <com.daimeng.livee.widget.BlackTextView
+        <com.daimeng.live.widget.BlackTextView
             android:id="@+id/tv_show_protect_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -29,7 +29,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCUtils;
 import com.tencent.liteav.demo.videorecord.bgm.TCBGMRecordView;
 import com.tencent.ugc.TXUGCRecord;

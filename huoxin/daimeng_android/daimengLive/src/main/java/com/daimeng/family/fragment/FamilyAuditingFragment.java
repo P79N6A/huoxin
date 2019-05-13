@@ -11,12 +11,12 @@ import android.view.ViewGroup;
 
 import com.daimeng.family.adapter.FamilyAuditingListAdapter;
 import com.daimeng.family.event.FamilyAuditingEvent;
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
-import com.daimeng.livee.api.remote.ApiUtils;
-import com.daimeng.livee.api.remote.PhoneLiveApi;
-import com.daimeng.livee.base.BaseFragment;
-import com.daimeng.livee.bean.SimpleUserInfo;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
+import com.daimeng.live.api.remote.ApiUtils;
+import com.daimeng.live.api.remote.PhoneLiveApi;
+import com.daimeng.live.base.BaseFragment;
+import com.daimeng.live.bean.SimpleUserInfo;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import org.greenrobot.eventbus.EventBus;

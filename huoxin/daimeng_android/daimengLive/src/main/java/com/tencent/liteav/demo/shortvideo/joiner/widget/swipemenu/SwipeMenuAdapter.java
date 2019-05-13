@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 import java.util.List;
 

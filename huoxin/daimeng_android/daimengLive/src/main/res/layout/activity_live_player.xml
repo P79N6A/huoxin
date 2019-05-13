@@ -5,7 +5,7 @@
     android:id="@+id/rl_live_root">
 
 
-    <com.daimeng.livee.widget.VideoSurfaceView
+    <com.daimeng.live.widget.VideoSurfaceView
         android:id="@+id/video_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +27,7 @@
         android:layout_height="match_parent"
         android:id="@+id/view_live_content">
         <!--加载背景图-->
-        <com.daimeng.livee.widget.LoadUrlImageView
+        <com.daimeng.live.widget.LoadUrlImageView
             android:scaleType="centerCrop"
             android:id="@+id/iv_live_look_loading_bg"
             android:layout_width="match_parent"

@@ -10,7 +10,7 @@
         android:layout_height="90dp"
         android:orientation="vertical">
 
-        <com.daimeng.livee.widget.CircleImageView
+        <com.daimeng.live.widget.CircleImageView
             android:id="@+id/iv_envelope_open_head"
             android:layout_width="60dp"
             android:layout_height="60dp"

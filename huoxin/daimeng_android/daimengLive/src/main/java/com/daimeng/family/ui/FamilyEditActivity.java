@@ -3,14 +3,14 @@ package com.daimeng.family.ui;
 import android.view.View;
 import android.widget.EditText;
 
-import com.daimeng.livee.AppConfig;
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
-import com.daimeng.livee.api.remote.ApiUtils;
-import com.daimeng.livee.api.remote.PhoneLiveApi;
-import com.daimeng.livee.base.BaseActivity;
-import com.daimeng.livee.ui.customviews.ActivityTitle;
-import com.daimeng.livee.utils.UIHelper;
+import com.daimeng.live.AppConfig;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
+import com.daimeng.live.api.remote.ApiUtils;
+import com.daimeng.live.api.remote.PhoneLiveApi;
+import com.daimeng.live.base.BaseActivity;
+import com.daimeng.live.ui.customviews.ActivityTitle;
+import com.daimeng.live.utils.UIHelper;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 

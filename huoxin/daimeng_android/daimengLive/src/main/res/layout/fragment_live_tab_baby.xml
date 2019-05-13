@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.daimeng.livee.fragment.LiveTabBabyFragment">
+    tools:context="com.daimeng.live.fragment.LiveTabBabyFragment">
 
     <TextView
         android:text="111111111"

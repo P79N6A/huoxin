@@ -104,7 +104,7 @@
             android:layout_height="50dp"
             android:orientation="horizontal">
 
-            <com.daimeng.livee.widget.BlackButton
+            <com.daimeng.live.widget.BlackButton
                 android:layout_gravity="center"
                 android:layout_width="50dp"
                 android:layout_height="30dp"
@@ -112,7 +112,7 @@
                 android:background="@drawable/tglbtn_live_danmu_setting"
                 />
 
-            <com.daimeng.livee.widget.BlackEditText
+            <com.daimeng.live.widget.BlackEditText
                 android:textColorHint="@color/white"
                 android:maxLength="50"
                 android:textSize="@dimen/text_size_15"

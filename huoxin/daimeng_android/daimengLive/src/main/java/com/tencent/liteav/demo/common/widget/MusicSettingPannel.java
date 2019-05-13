@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.SeekBar;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 /**
  * Created by linkzhzhu on 2017/7/18.

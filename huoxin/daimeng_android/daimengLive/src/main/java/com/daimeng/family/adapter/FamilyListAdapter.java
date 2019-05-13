@@ -6,11 +6,11 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.daimeng.family.bean.FamilyBean;
 import com.daimeng.family.event.FamilyEvent;
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
-import com.daimeng.livee.utils.SimpleUtils;
-import com.daimeng.livee.utils.StringUtils;
-import com.daimeng.livee.widget.CircleImageView;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
+import com.daimeng.live.utils.SimpleUtils;
+import com.daimeng.live.utils.StringUtils;
+import com.daimeng.live.widget.CircleImageView;
 
 import org.greenrobot.eventbus.EventBus;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.daimeng.livee">
+    package="com.daimeng.live">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
@@ -68,13 +68,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.daimeng.livee.AppContext"
+        android:name="com.daimeng.live.AppContext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.daimeng.livee.AppStart"
+            android:name="com.daimeng.live.AppStart"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -106,88 +106,88 @@
         </receiver>
 
         <activity
-            android:name="com.daimeng.livee.ui.MainActivity"
+            android:name="com.daimeng.live.ui.MainActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.MobileLoginActivity"
+            android:name="com.daimeng.live.ui.MobileLoginActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.MobileRegActivity"
+            android:name="com.daimeng.live.ui.MobileRegActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.MobileFindPassActivity"
+            android:name="com.daimeng.live.ui.MobileFindPassActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.SelectLoginActivity"
+            android:name="com.daimeng.live.ui.SelectLoginActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.UserInfoDetailActivity"
+            android:name="com.daimeng.live.ui.UserInfoDetailActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.EditInfoActivity"
+            android:name="com.daimeng.live.ui.EditInfoActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.UserSelectAvatarActivity"
+            android:name="com.daimeng.live.ui.UserSelectAvatarActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.UserLevelActivity"
+            android:name="com.daimeng.live.ui.UserLevelActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.UserDiamondsActivity"
+            android:name="com.daimeng.live.ui.UserDiamondsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.UserProfitActivity"
+            android:name="com.daimeng.live.ui.UserProfitActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.SettingActivity"
+            android:name="com.daimeng.live.ui.SettingActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.WebViewActivity"
+            android:name="com.daimeng.live.ui.WebViewActivity"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="com.daimeng.livee.ui.RtmpPushActivity"
+            android:name="com.daimeng.live.ui.RtmpPushActivity"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.daimeng.livee.ui.RtmpPlayerActivity"
+            android:name="com.daimeng.live.ui.RtmpPlayerActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.daimeng.livee.ui.HomePageActivity"
+            android:name="com.daimeng.live.ui.HomePageActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.SimpleUserInfoListActivity"
+            android:name="com.daimeng.live.ui.SimpleUserInfoListActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.DedicateOrderActivity"
+            android:name="com.daimeng.live.ui.DedicateOrderActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.LiveRecordActivity"
+            android:name="com.daimeng.live.ui.LiveRecordActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.UserChangeSexActivity"
+            android:name="com.daimeng.live.ui.UserChangeSexActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity android:name="com.daimeng.family.ui.CreateFamilyActivity" />
@@ -196,22 +196,22 @@
         <activity android:name="com.daimeng.family.ui.FamilyManageActivity" />
         <activity android:name="com.daimeng.family.ui.FamilyUserListActivity" />
         <activity android:name="com.daimeng.family.ui.FamilyEditActivity" />
-        <activity android:name="com.daimeng.livee.ui.LiveRecordPlayerActivity" />
-        <activity android:name="com.daimeng.livee.ui.SettingPushLiveActivity" />
-        <activity android:name="com.daimeng.livee.ui.SplashActivity" />
-        <activity android:name="com.daimeng.livee.ui.ChangePassActivity" />
-        <activity android:name="com.daimeng.livee.ui.RequestCashActivity" />
-        <activity android:name="com.daimeng.livee.ui.BuyVipActivity" />
+        <activity android:name="com.daimeng.live.ui.LiveRecordPlayerActivity" />
+        <activity android:name="com.daimeng.live.ui.SettingPushLiveActivity" />
+        <activity android:name="com.daimeng.live.ui.SplashActivity" />
+        <activity android:name="com.daimeng.live.ui.ChangePassActivity" />
+        <activity android:name="com.daimeng.live.ui.RequestCashActivity" />
+        <activity android:name="com.daimeng.live.ui.BuyVipActivity" />
         <activity
-            android:name="com.daimeng.livee.ui.SimpleBackActivity"
+            android:name="com.daimeng.live.ui.SimpleBackActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.ActionBarSimpleBackActivity"
+            android:name="com.daimeng.live.ui.ActionBarSimpleBackActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.daimeng.livee.ui.AlipayResultActivity"
+            android:name="com.daimeng.live.ui.AlipayResultActivity"
             android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="adjustResize|adjustPan" />
         <activity
@@ -324,7 +324,7 @@
 
         <!-- User defined. 用户自定义的广播接收器 -->
         <receiver
-            android:name="com.daimeng.livee.broadcast.PushReceiver"
+            android:name="com.daimeng.live.broadcast.PushReceiver"
             android:enabled="true">
             <intent-filter>
 
@@ -391,10 +391,10 @@
             android:name="BUGLY_ENABLE_DEBUG"
             android:value="true" />
 
-        <activity android:name="com.daimeng.livee.ui.OrderWebViewActivity" />
-        <activity android:name="com.daimeng.livee.ui.AgentActivity" />
-        <activity android:name="com.daimeng.livee.ui.AgentProfitRecordActivity" />
-        <activity android:name="com.daimeng.livee.ui.AgentUserListActivity" />
+        <activity android:name="com.daimeng.live.ui.OrderWebViewActivity" />
+        <activity android:name="com.daimeng.live.ui.AgentActivity" />
+        <activity android:name="com.daimeng.live.ui.AgentProfitRecordActivity" />
+        <activity android:name="com.daimeng.live.ui.AgentUserListActivity" />
         <activity
             android:name="com.tencent.liteav.demo.shortvideo.choose.TCVideoChooseActivity"
             android:screenOrientation="portrait" />
@@ -418,19 +418,19 @@
             android:name="com.tencent.liteav.demo.common.activity.videopreview.TCVideoPreviewActivity"
             android:screenOrientation="portrait" />
         <activity android:name="com.daimeng.shortlive.activity.PushShortVideoActivity" />
-        <activity android:name="com.daimeng.livee.ui.ShortVideoListActivity" />
-        <activity android:name="com.daimeng.livee.ui.ShortVideoPlayerActivity" />
-        <activity android:name="com.daimeng.livee.ui.ShortVideoReportActivity" />
-        <activity android:name="com.daimeng.livee.ui.ShortVideoReplyCommentListActivity" />
-        <activity android:name="com.daimeng.livee.ui.NewsMessageActivity" />
-        <activity android:name="com.daimeng.livee.ui.RankActivity" />
-        <activity android:name="com.daimeng.livee.ui.ShortVideoPlayerTouchActivity" />
-        <activity android:name="com.daimeng.livee.ui.LeftScrollVideoListActivity" />
+        <activity android:name="com.daimeng.live.ui.ShortVideoListActivity" />
+        <activity android:name="com.daimeng.live.ui.ShortVideoPlayerActivity" />
+        <activity android:name="com.daimeng.live.ui.ShortVideoReportActivity" />
+        <activity android:name="com.daimeng.live.ui.ShortVideoReplyCommentListActivity" />
+        <activity android:name="com.daimeng.live.ui.NewsMessageActivity" />
+        <activity android:name="com.daimeng.live.ui.RankActivity" />
+        <activity android:name="com.daimeng.live.ui.ShortVideoPlayerTouchActivity" />
+        <activity android:name="com.daimeng.live.ui.LeftScrollVideoListActivity" />
         <activity
-            android:name="com.daimeng.livee.ui.CloudVideoPlayerActivity"
+            android:name="com.daimeng.live.ui.CloudVideoPlayerActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-        <activity android:name="com.daimeng.livee.ui.UserRechargeActivity"></activity>
+        <activity android:name="com.daimeng.live.ui.UserRechargeActivity"></activity>
     </application>
 
 </manifest>

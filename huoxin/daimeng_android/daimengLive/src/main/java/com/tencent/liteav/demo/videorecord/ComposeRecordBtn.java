@@ -10,7 +10,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 /**
  * Created by vinsonswang on 2017/9/8.

@@ -6,8 +6,8 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.shortvideo.joiner.widget.swipemenu.ResCompat;
 
 public class ListViewDecoration extends RecyclerView.ItemDecoration {

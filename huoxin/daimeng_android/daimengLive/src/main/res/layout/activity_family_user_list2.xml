@@ -4,7 +4,7 @@
              android:layout_height="match_parent"
              xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    <com.daimeng.livee.ui.customviews.ActivityTitle
+    <com.daimeng.live.ui.customviews.ActivityTitle
         android:id="@+id/view_title"
         android:background="@color/graywhite"
         app:titleColor="@color/black"

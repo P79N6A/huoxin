@@ -11,7 +11,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ProgressBar;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 //import com.daimeng.livee.R;
 

@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 import java.util.ArrayList;
 

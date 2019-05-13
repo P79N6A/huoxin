@@ -6,12 +6,12 @@ import android.view.View;
 
 import com.daimeng.family.fragment.FamilyAuditingFragment;
 import com.daimeng.family.fragment.FamilyListFragment;
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
-import com.daimeng.livee.adapter.ViewPageFragmentAdapter;
-import com.daimeng.livee.base.BaseActivity;
-import com.daimeng.livee.ui.customviews.ActivityTitle;
-import com.daimeng.livee.widget.PagerSlidingTabStrip;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
+import com.daimeng.live.adapter.ViewPageFragmentAdapter;
+import com.daimeng.live.base.BaseActivity;
+import com.daimeng.live.ui.customviews.ActivityTitle;
+import com.daimeng.live.widget.PagerSlidingTabStrip;
 
 import butterknife.BindView;
 

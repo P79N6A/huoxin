@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_rank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 app:name="贡献榜" />
 
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_news_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
                 app:name="消息" />
 
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_short_video"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                 app:isBottom="true"
                 app:name="我的视频" />
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_profit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                 app:isBottom="true"
                 app:name="@string/income" />
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_live_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                 app:isBottom="true"
                 app:name="@string/select_live_time" />
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_diamonds"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                 app:iconRes="@drawable/ic_center_diamonds"
                 app:isBottom="true" />
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_vip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                 app:isBottom="true"
                 app:name="购买会员" />
 
-            <com.daimeng.livee.ui.customviews.LineControllerView
+            <com.daimeng.live.ui.customviews.LineControllerView
                 android:id="@+id/ll_family_manage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

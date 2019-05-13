@@ -8,7 +8,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 public class CustomProgressBar extends AbsProgressBar {
 

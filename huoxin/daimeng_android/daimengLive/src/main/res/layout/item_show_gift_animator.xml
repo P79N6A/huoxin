@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <!--用户头像-->
-                <com.daimeng.livee.widget.AvatarView
+                <com.daimeng.live.widget.AvatarView
                     app:border_width="1dp"
                     app:border_color="@color/global"
                     android:id="@+id/av_gift_uhead"
@@ -53,7 +53,7 @@
 
             </LinearLayout>
             <!--礼物图片-->
-            <com.daimeng.livee.widget.AvatarView
+            <com.daimeng.live.widget.AvatarView
                 android:id="@+id/av_gift_icon"
                 android:layout_marginLeft="-40dp"
                 android:src="@drawable/icon_def_phone"
@@ -69,7 +69,7 @@
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <com.daimeng.livee.widget.SGTextView
+            <com.daimeng.live.widget.SGTextView
                 android:layout_alignParentBottom="true"
                 android:gravity="center"
                 android:layout_centerVertical="true"

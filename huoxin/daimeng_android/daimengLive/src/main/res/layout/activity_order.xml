@@ -6,7 +6,7 @@
     android:background="@color/timeline_clickable_text_highlighted_background">
 
 
-    <com.daimeng.livee.ui.customviews.ActivityTitle
+    <com.daimeng.live.ui.customviews.ActivityTitle
 
         android:id="@+id/view_title"
         android:background="@color/graywhite"

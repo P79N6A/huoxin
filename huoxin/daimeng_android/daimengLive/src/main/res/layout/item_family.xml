@@ -9,7 +9,7 @@
     android:layout_marginTop="10dp">
 
 
-    <com.daimeng.livee.widget.CircleImageView
+    <com.daimeng.live.widget.CircleImageView
         android:layout_centerVertical="true"
         android:id="@+id/iv_avatar"
         android:layout_width="40dp"

@@ -29,7 +29,7 @@ import android.widget.Toast;
 
 import com.daimeng.shortlive.activity.PushShortVideoActivity;
 import com.tencent.liteav.basic.log.TXCLog;
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCConstants;
 import com.tencent.liteav.demo.common.utils.TCUtils;
 import com.tencent.liteav.demo.common.widget.VideoWorkProgressFragment;

@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.daimeng.livee.widget.BlackTextView
+            <com.daimeng.live.widget.BlackTextView
                 android:textSize="@dimen/text_size_10"
                 android:textColor="@color/white"
                 android:id="@+id/tv_name"

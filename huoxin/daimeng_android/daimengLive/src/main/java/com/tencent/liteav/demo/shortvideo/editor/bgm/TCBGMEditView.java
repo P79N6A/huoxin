@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.liteav.demo.common.utils.TCUtils;
 import com.tencent.liteav.demo.shortvideo.editor.Edit;
 import com.tencent.liteav.demo.shortvideo.editor.RangeSlider;

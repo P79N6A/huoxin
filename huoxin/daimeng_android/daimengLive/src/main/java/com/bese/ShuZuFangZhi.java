@@ -2,7 +2,7 @@ package com.bese;
 
 //import com.daimeng.livee.R;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 public class ShuZuFangZhi {
     public static int[] xindongImages(){

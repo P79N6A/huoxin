@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="35dp">
 
-        <com.daimeng.livee.widget.CircleImageView
+        <com.daimeng.live.widget.CircleImageView
             android:id="@+id/item_short_video_avatar"
             android:layout_centerVertical="true"
             android:layout_width="35dp"

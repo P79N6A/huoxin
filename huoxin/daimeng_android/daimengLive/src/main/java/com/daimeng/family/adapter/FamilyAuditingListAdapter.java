@@ -5,11 +5,11 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.daimeng.family.event.FamilyAuditingEvent;
-import com.daimeng.livee.AppContext;
-import com.daimeng.livee.R;
-import com.daimeng.livee.bean.SimpleUserInfo;
-import com.daimeng.livee.utils.SimpleUtils;
-import com.daimeng.livee.widget.CircleImageView;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.R;
+import com.daimeng.live.bean.SimpleUserInfo;
+import com.daimeng.live.utils.SimpleUtils;
+import com.daimeng.live.widget.CircleImageView;
 
 import org.greenrobot.eventbus.EventBus;
 

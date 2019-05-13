@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <com.daimeng.livee.widget.AvatarView
+            <com.daimeng.live.widget.AvatarView
                 android:visibility="gone"
                 app:border_color="@color/global"
                 app:border_width="2dp"
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <com.daimeng.livee.widget.BlackTextView
+            <com.daimeng.live.widget.BlackTextView
                 android:layout_marginTop="60dp"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_size_25"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textSize="@dimen/text_size_15"
                     android:layout_marginTop="10dp"
                     android:text="0"
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textSize="@dimen/text_size_15"
                     android:layout_marginTop="10dp"
                     android:id="@+id/tv_live_duration"
@@ -113,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:textSize="@dimen/text_size_15"
                     android:layout_marginTop="10dp"
                     android:text="0"
@@ -132,7 +132,7 @@
 
 
         </LinearLayout>
-        <com.daimeng.livee.widget.BlackButton
+        <com.daimeng.live.widget.BlackButton
             android:text="返回首页"
             android:layout_marginBottom="140dp"
             android:layout_centerHorizontal="true"

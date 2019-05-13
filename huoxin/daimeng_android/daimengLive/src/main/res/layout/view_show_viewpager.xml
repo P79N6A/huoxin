@@ -53,14 +53,14 @@
                 android:layout_centerVertical="true"
                 android:orientation="vertical">
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/liansendgift"
                     android:textColor="@color/white"
                     android:textSize="@dimen/text_size_10" />
 
-                <com.daimeng.livee.widget.BlackTextView
+                <com.daimeng.live.widget.BlackTextView
                     android:id="@+id/tv_show_gift_outtime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -110,14 +110,14 @@
                     android:layout_marginLeft="20dp"
                     android:orientation="horizontal">
 
-                    <com.daimeng.livee.widget.BlackTextView
+                    <com.daimeng.live.widget.BlackTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="充值:"
                         android:textColor="@color/global"
                         android:textSize="@dimen/text_size_15" />
 
-                    <com.daimeng.livee.widget.BlackTextView
+                    <com.daimeng.live.widget.BlackTextView
                         android:id="@+id/tv_show_select_user_coin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

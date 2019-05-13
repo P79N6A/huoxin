@@ -15,7 +15,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.tencent.liteav.basic.log.TXCLog;
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 import com.tencent.ugc.TXRecordCommon;
 
 /**

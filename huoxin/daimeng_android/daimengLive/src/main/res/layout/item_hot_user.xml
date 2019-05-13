@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="400dp">
 
-        <com.daimeng.livee.widget.LoadUrlImageView
+        <com.daimeng.live.widget.LoadUrlImageView
             android:scaleType="centerCrop"
             android:id="@+id/iv_live_user_pic"
             android:layout_width="match_parent"

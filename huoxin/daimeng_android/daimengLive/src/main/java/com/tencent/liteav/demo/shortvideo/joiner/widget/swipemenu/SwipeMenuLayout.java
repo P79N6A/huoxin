@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.OverScroller;
 import android.widget.TextView;
 
-import com.daimeng.livee.R;
+import com.daimeng.live.R;
 
 public class SwipeMenuLayout extends FrameLayout implements SwipeSwitch {
 
