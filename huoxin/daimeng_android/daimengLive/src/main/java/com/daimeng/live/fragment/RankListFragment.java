@@ -27,7 +27,6 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import okhttp3.Call;
-
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -72,6 +71,7 @@ public class RankListFragment extends BaseFragment implements SwipeRefreshLayout
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 UIHelper.showHomePageActivity(getContext(),list.get(position).getId());
+
             }
         });
         swipeRefreshLayout.setOnRefreshListener(this);

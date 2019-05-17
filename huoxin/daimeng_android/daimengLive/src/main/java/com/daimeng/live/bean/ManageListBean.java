@@ -19,7 +19,6 @@ public class ManageListBean {
      * isrecommend : 0
      * level : 6
      */
-
     private int id;
     private String user_nicename;
     private String avatar;

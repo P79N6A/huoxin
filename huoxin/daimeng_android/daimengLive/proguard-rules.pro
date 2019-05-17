@@ -300,3 +300,4 @@ public static java.lang.String TABLENAME;
 -dontwarn rx.**
 
 -keep class com.tencent.** { *; }
+

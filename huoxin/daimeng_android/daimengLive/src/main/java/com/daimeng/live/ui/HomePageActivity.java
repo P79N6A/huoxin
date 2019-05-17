@@ -52,6 +52,7 @@ import okhttp3.Call;
 public class HomePageActivity extends BaseActivity {
 
 
+
     //昵称
     @BindView(R.id.tv_home_page_uname)
     BlackTextView mTvUNice;
@@ -61,6 +62,8 @@ public class HomePageActivity extends BaseActivity {
 
     @BindView(R.id.iv_home_page_level)
     ImageView mULevel;
+
+    public ImageView mULevels;
 
     //头像
     @BindView(R.id.av_home_page_uhead)
@@ -248,7 +251,7 @@ public class HomePageActivity extends BaseActivity {
         if(null!=mUserHomePageBean.getWealth().getCustombackground()&&!mUserHomePageBean.getWealth().equals("")){
             SimpleUtils.loadImageForView(this,  mULevel, mUserHomePageBean.getWealth().getCustombackground(), 0);
         }
-
+        mULevels=mULevel;
 
         mTvUFansNum.setText(getString(R.string.fans) + ":" + mUserHomePageBean.fans);
         mTvUFollowNum.setText(getString(R.string.attention) + ":" + mUserHomePageBean.follows);

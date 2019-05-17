@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.tencent.cos.COSClient;
 import com.tencent.cos.COSConfig;
@@ -286,7 +287,7 @@ public class TVCClient {
 
             String message = jsonRsp.optString("message", "");
             JSONObject dataObj = jsonRsp.getJSONObject("data");
-
+            Log.e("dataObj = ","------dataObj = "+jsonRsp.getJSONObject("data"));
             if (0 != code) {
                 notifyUploadFailed(TVCConstants.ERR_UGC_PARSE_FAILED, code + "|" + message);
 
@@ -406,7 +407,6 @@ public class TVCClient {
     // 解析cos上传视频返回信息
     private void startUploadCoverFile(PutObjectResult result, boolean isResumeUpload) {
 //        coverUrl = result.access_url;
-
         // 第三步 通过COS上传封面
         if (uploadInfo.isNeedCover()) {
             uploadCosCover(isResumeUpload);
@@ -479,7 +479,6 @@ public class TVCClient {
                         if (cosResult.code != -20002 && isResumeUpload) {
                             setSession(uploadInfo.getFilePath(), null);
                         }
-
                         /************************************************************************
                          * 需要忽略本地存储的vodsession，重启上传流程的几种情况
                          * -177：  相同文件名的文件已存在
@@ -521,7 +520,6 @@ public class TVCClient {
         finishInfo.setUploadSession(session);
         finishInfo.setDomain(domain);
         finishInfo.setVodSessionKey(vodSessionKey);
-
 
         // 第三步 上传结束
         ugcClient.finishUploadUGC(finishInfo, new Callback() {
@@ -618,28 +616,30 @@ public class TVCClient {
         if (filePath == null || filePath.isEmpty()) {
             return null;
         }
-
         String session = "";
         if (mSharedPreferences != null) {
             try {
-                String itemPath = filePath;
-                if (mUserID != null && !mUserID.isEmpty()) {
-                    itemPath += mUserID;
-                }
-                JSONObject json = new JSONObject(mSharedPreferences.getString(itemPath, ""));
-                session = json.optString("session", "");
-                long expiredTime = json.optLong("expiredTime", 0);
-                // 过期了清空key
-                if (expiredTime < System.currentTimeMillis() / 1000) {
-                    session = "";
-                    mShareEditor.remove(itemPath);
-                    mShareEditor.commit();
-                }
+                     String itemPath = filePath;
+                     if (mUserID != null && !mUserID.isEmpty()) {
+                         itemPath += mUserID;
+                     }
+                        String itemValue = mSharedPreferences.getString(itemPath,"");
+                     if (!TextUtils.isEmpty(itemValue)){
+                         JSONObject json = new JSONObject(itemValue);
+                            session = json.optString("session","");
+                         long expiredTime = json.optLong("expiredTime",0);
+                              // 过期了清空key
+                        if (expiredTime < System.currentTimeMillis() / 1000) {
+                             session = "";
+                            mShareEditor.remove(itemPath);
+                             mShareEditor.commit();
+
+                        }
+                     }
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-
         return session;
     }
 

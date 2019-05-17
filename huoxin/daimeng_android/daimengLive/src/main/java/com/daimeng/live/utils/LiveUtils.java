@@ -15,16 +15,16 @@ import com.daimeng.live.api.remote.ApiUtils;
 import com.daimeng.live.api.remote.PhoneLiveApi;
 import com.daimeng.live.base.ShowLiveActivityBase;
 import com.daimeng.live.bean.CarBean;
-import com.daimeng.live.bean.GiftBean;
-import com.daimeng.live.bean.RankBean;
-import com.daimeng.live.bean.callback.InitInfoBean;
-import com.daimeng.live.bean.LiveCheckInfoBean;
-import com.daimeng.live.bean.LiveBean;
 import com.daimeng.live.bean.ConfigBean;
+import com.daimeng.live.bean.GiftBean;
+import com.daimeng.live.bean.LiveBean;
+import com.daimeng.live.bean.LiveCheckInfoBean;
+import com.daimeng.live.bean.RankBean;
 import com.daimeng.live.bean.SimpleUserInfo;
 import com.daimeng.live.bean.UserBean;
-import com.daimeng.live.interf.DialogInterface;
+import com.daimeng.live.bean.callback.InitInfoBean;
 import com.daimeng.live.dialog.LiveCommon;
+import com.daimeng.live.interf.DialogInterface;
 import com.daimeng.live.other.DrawableRes;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -95,6 +95,24 @@ public class LiveUtils {
 
     //获取等级图片
     public static int getLevelRes(String level){
+//        PhoneLiveApi.getUserInfo(mUser.id,mToUser.id,mRoomNum, new StringCallback() {
+//            @Override
+//            public void onError(Call call, Exception e,int id) {
+//            }
+//            @Override
+//            public void onResponse(String response,int id) {
+//                JSONArray res = ApiUtils.checkIsSuccess(response);
+//                if(res != null){
+//                    try {
+//                        JSONObject data = res.getJSONObject(0);
+//                        //财富等级
+//                        JSONObject da = data.getJSONObject("wealth");
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        });
         int l2 = StringUtils.toInt(level);
 
         return DrawableRes.LevelImg[(l2 == 0? 0 : l2 - 1)];

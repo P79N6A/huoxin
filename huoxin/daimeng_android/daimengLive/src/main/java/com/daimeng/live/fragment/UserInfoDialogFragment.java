@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,12 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daimeng.live.utils.SimpleUtils;
-import com.daimeng.live.widget.CircleImageView;
-import com.google.gson.Gson;
-import com.hyphenate.chat.EMClient;
-import com.hyphenate.exceptions.HyphenateException;
-import com.tandong.bottomview.view.BottomView;
 import com.daimeng.live.AppContext;
 import com.daimeng.live.R;
 import com.daimeng.live.api.remote.ApiUtils;
@@ -31,9 +26,15 @@ import com.daimeng.live.bean.SimpleUserInfo;
 import com.daimeng.live.bean.UserBean;
 import com.daimeng.live.event.Event;
 import com.daimeng.live.im.IMControl;
-import com.daimeng.live.utils.LiveUtils;
-import com.daimeng.live.utils.UIHelper;
 import com.daimeng.live.ui.customviews.BottomMenuView;
+import com.daimeng.live.utils.LiveUtils;
+import com.daimeng.live.utils.SimpleUtils;
+import com.daimeng.live.utils.UIHelper;
+import com.daimeng.live.widget.CircleImageView;
+import com.google.gson.Gson;
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.exceptions.HyphenateException;
+import com.tandong.bottomview.view.BottomView;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -44,8 +45,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import butterknife.ButterKnife;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import okhttp3.Call;
 import rx.Observable;
 import rx.Subscriber;
@@ -152,10 +153,10 @@ public class UserInfoDialogFragment extends DialogFragment {
             @Override
             public void onResponse(String response,int id) {
                 JSONArray res = ApiUtils.checkIsSuccess(response);
+                Log.e("------res = ","--------res = "+ApiUtils.checkIsSuccess(response));
                 if(res != null){
                     try {
                         JSONObject data = res.getJSONObject(0);
-
                         mTvFollowNum.setText(data.getString("follows"));
                         mTvFansNum.setText(data.getString("fans"));
                         //mTvSendNum.setText(  "送出:  " + data.getString("consumption"));
@@ -166,6 +167,11 @@ public class UserInfoDialogFragment extends DialogFragment {
                         //财富等级
 
                         JSONObject da = data.getJSONObject("wealth");
+                        Log.e("da = ","------wealth = "+data.getJSONObject("wealth"));
+//                        SharedPreferences sharedPreferences=getShare
+//                        SharedPreferences.Editor editor=sharedPreferences.edit();
+//                        editor.putString("name","张三");
+//                        editor.commit();
                           if(null!=da.getString("custombackground")&&!da.getString("custombackground").equals("")){
                               SimpleUtils.loadImageForView(AppContext.getInstance(),mIvLevel, da.getString("custombackground"), 0);
                           }

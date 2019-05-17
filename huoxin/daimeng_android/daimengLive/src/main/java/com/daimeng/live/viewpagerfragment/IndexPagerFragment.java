@@ -68,10 +68,8 @@ public class IndexPagerFragment extends BaseFragment implements ListenMessage {
         if (view == null) {
             view = inflater.inflate(R.layout.fragment_hot, null);
             ButterKnife.bind(this, view);
-
             initView();
             initData();
-
         } else {
             mIvNewMessage.setVisibility(View.GONE);
             tabs.setPageChangeListener();

@@ -56,7 +56,6 @@ public class RankActivity extends BaseActivity {
         viewPageFragmentAdapter.addTab(getString(R.string.income_rank), "income_rank", ConsumpationIncomeRankFragment.class,incomeRank );
         viewPageFragmentAdapter.addTab(getString(R.string.consumpation_rank), "consumpation_rank", ConsumpationIncomeRankFragment.class,consumpationRank);
         mViewPage.setAdapter(viewPageFragmentAdapter);
-
         mViewPage.setOffscreenPageLimit(2);
 
         mPagerSlidingTabStrip.setViewPager(mViewPage);

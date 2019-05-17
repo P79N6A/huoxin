@@ -21,30 +21,31 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
+import com.daimeng.live.AppContext;
+import com.daimeng.live.AppManager;
+import com.daimeng.live.R;
+import com.daimeng.live.api.remote.ApiUtils;
 import com.daimeng.live.api.remote.PhoneLiveApi;
+import com.daimeng.live.base.BaseActivity;
 import com.daimeng.live.bean.LiveBean;
 import com.daimeng.live.bean.LiveCheckInfoBean;
 import com.daimeng.live.broadcast.PushReceiver;
+import com.daimeng.live.em.MainTab;
 import com.daimeng.live.fragment.InviteCodeDialogFragment;
 import com.daimeng.live.interf.BaseViewInterface;
 import com.daimeng.live.utils.DialogHelp;
 import com.daimeng.live.utils.LiveUtils;
+import com.daimeng.live.utils.LoginUtils;
 import com.daimeng.live.utils.StringUtils;
 import com.daimeng.live.utils.TDevice;
 import com.daimeng.live.utils.TLog;
 import com.daimeng.live.utils.UIHelper;
 import com.daimeng.live.utils.UpdateManager;
+import com.daimeng.live.widget.MyFragmentTabHost;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
-import com.daimeng.live.AppContext;
-import com.daimeng.live.AppManager;
-import com.daimeng.live.R;
-import com.daimeng.live.api.remote.ApiUtils;
-import com.daimeng.live.base.BaseActivity;
-import com.daimeng.live.em.MainTab;
-import com.daimeng.live.utils.LoginUtils;
-import com.daimeng.live.widget.MyFragmentTabHost;
 import com.tandong.bottomview.view.BottomView;
+import com.tencent.bugly.crashreport.CrashReport;
 import com.tencent.liteav.demo.videorecord.TCVideoRecordActivity;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -62,6 +63,7 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
     @BindView(android.R.id.tabhost)
     MyFragmentTabHost mTabHost;
 
+
     @Override
     protected int getLayoutId() {
         return R.layout.activity_main;
@@ -71,6 +73,9 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
 
     @Override
     public void initView() {
+
+        CrashReport.initCrashReport(getApplicationContext());
+
         AppManager.getInstance().addActivity(this);
         mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
